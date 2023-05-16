@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TimeConverter.com</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	
+<style type="text/css">
+	body {
+		background-image: url(greenbg.jpg);
+        background-size: 100%;
+        
+	}	
+	div {
+		height: 200px;
+		width: 1200px;
+
+		border-radius: 10px;
+		padding-top: 15px;
+	}
+
+    table {
+        height: 100px;
+        width: 500px;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+    }
+</style>
+
+<script type="text/javascript">
+    function minsec(){
+        var x, y
+        x = (document.getElementById('minutesa').value);
+        y = 60;
+        alert(x * y);
+    }
+
+    function minhr(){
+        var x, y
+        x = (document.getElementById('minutesb').value);
+        y = 60;
+        alert(x / y);
+    }
+
+    function minday(){
+        var x, y
+        x = (document.getElementById('minutesc').value);
+        y = 1440;
+        alert(x / y);
+    }
+
+    function hrsec(){
+        var x, y
+        x = (document.getElementById('hoursa').value);
+        y = 3600;
+        alert(x * y);
+    }
+
+    function hrmin(){
+        var x, y
+        x = (document.getElementById('hoursb').value);
+        y = 60;
+        alert(x * y);
+    }
+
+    function hrday(){
+        var x, y
+        x = (document.getElementById('hoursc').value);
+        y = 24;
+        alert(x / y);
+    }
+
+    function secmin(){
+        var x, y
+        x = (document.getElementById('secondsa').value);
+        y = 60;
+        alert(x / y);
+    }
+
+    function sechr(){
+        var x, y
+        x = (document.getElementById('secondsb').value);
+        y = 3600;
+        alert(x / y);
+    }
+
+    function secday(){
+        var x, y
+        x = (document.getElementById('secondsc').value);
+        y = 86400;
+        alert(x / y);
+    }
+
+    function daysec(){
+        var x, y
+        x = (document.getElementById('daysa').value);
+        y = 86400;
+        alert(x * y);
+    }
+
+    function daymin(){
+        var x, y
+        x = (document.getElementById('daysb').value);
+        y = 1440;
+        alert(x * y);
+    }
+
+    function dayhr(){
+        var x, y
+        x = (document.getElementById('daysc').value);
+        y = 24;
+        alert(x * y);
+    }
+
+</script>
+
+<center>
+    <img src="timer logo.png" height="290px" width="300px">
+</center>
+
+<center>
+<table>
+    <tr>
+        <td>
+            <center>
+                <h1>TimeConversion.com</h1>
+            </center>
+        </td>
+    </tr>
+</table>
+</center>
+
+
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 bg-light">
+            <center>
+                <h3>Minutes</h3>
+
+                    To Seconds <input type="text" id="minutesa">
+                <input type="button" class="btn btn-secondary btn-sm" onclick="minsec()" value="Convert">
+                <br>
+                 To Hours <input type="text" id="minutesb">
+                <input type="button" class="btn btn-secondary btn-sm" onclick="minhr()" value="Convert">
+                <br>
+                 To Days <input type="text" id="minutesc">
+                <input type="button" class="btn btn-secondary btn-sm" onclick="minday()" value="Convert">
+
+
+            </center>
+        </div>
+
+        <div class="col-md-6 bg-success">
+        	<center>
+                <h3>Hours</h3>
+
+                    To Seconds <input type="text" id="hoursa">
+                <input type="button" class="btn btn-light btn-sm" onclick="hrsec()" value="Convert">
+                <br>
+                 To Minutes <input type="text" id="hoursb">
+                <input type="button" class="btn btn-light btn-sm" onclick="hrmin()" value="Convert">
+                <br>
+                 To Days <input type="text" id="hoursc">
+                <input type="button" class="btn btn-light btn-sm" onclick="hrday()" value="Convert">
+
+
+            </center>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-md-6 bg-success">
+    		<center>
+                <h3>Seconds</h3>
+
+                    To Minutes <input type="text" id="secondsa">
+                <input type="button" class="btn btn-light btn-sm" onclick="secmin()" value="Convert">
+                <br>
+                 To Hours <input type="text" id="secondsb">
+                <input type="button" class="btn btn-light btn-sm" onclick="sechr()" value="Convert">
+                <br>
+                 To Days <input type="text" id="secondsc">
+                <input type="button" class="btn btn-light btn-sm" onclick="secday()" value="Convert">
+            </center>
+    	</div>
+    	<div class="col-md-6 bg-light">
+            <center>
+                <h3>Days</h3>
+
+                    To Seconds <input type="text" id="daysa">
+                <input type="button" class="btn btn-secondary btn-sm" onclick="daysec()" value="Convert">
+                <br>
+                 To Minutes <input type="text" id="daysb">
+                <input type="button" class="btn btn-secondary btn-sm" onclick="daymin()" value="Convert">
+                <br>
+                 To Hours <input type="text" id="daysc">
+                <input type="button" class="btn btn-secondary btn-sm" onclick="dayhr()" value="Convert">
+
+
+            </center>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+</body>
+</html>
